@@ -141,14 +141,14 @@ export default (
                     label: 'Repo',
                     click: async (): Promise<void> => {
                       await ensureDir(DIR_REPO());
-                      shell.openItem(DIR_REPO());
+                      shell.openPath(DIR_REPO());
                     },
                     ...accelerators.openRepo,
                   },
                   {
                     label: 'Configuration',
                     click: (): void => {
-                      shell.openItem(FILE_CONFIG());
+                      shell.openPath(FILE_CONFIG());
                     },
                     ...accelerators.openConfiguration,
                   },
